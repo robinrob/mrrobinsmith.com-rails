@@ -151,5 +151,5 @@ end
 
 
 task :kill do
-  system("kill `cat tmp/pids/server.pid`")
+  system("kill `cat tmp/pids/server.pid 2> /dev/null` 2> /dev/null")
 end
