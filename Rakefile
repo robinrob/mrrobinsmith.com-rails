@@ -118,15 +118,31 @@ end
 
 
 task :save do(branch="master")
-  commit()
-  pull(branch)
-  push(branch)
+  save()
 end
 
 
+def save()
+  commit()
+  pull(branch)
+  push(branch)
+end  
+
+
 task :deploy do
+  deploy()
+end
+
+
+def deploy
   do_install()
   system("git push heroku master")
+end  
+
+
+task :heroku do
+  save()
+  deploy()
 end
 
 
