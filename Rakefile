@@ -122,7 +122,7 @@ task :save do(branch="master")
 end
 
 
-def save()
+def save(branch='master')
   commit()
   pull(branch)
   push(branch)
