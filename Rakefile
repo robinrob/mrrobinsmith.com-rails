@@ -11,6 +11,11 @@ RUBY = '2.0.0'
 
 
 task :install do
+   do_install()
+end
+
+
+def do_install()
   install_ruby()
   install_gems()
 end
@@ -112,10 +117,16 @@ def status
 end
 
 
-task :deploy do(branch="master")
+task :save do(branch="master")
   commit()
   pull(branch)
   push(branch)
+end
+
+
+task :deploy do
+  do_install()
+  system("git push heroku master")
 end
 
 
