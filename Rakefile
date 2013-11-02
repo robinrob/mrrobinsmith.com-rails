@@ -150,6 +150,6 @@ task :log do
 end
 
 
-def wrap_quotes(s)
-  "'" + s + "'"
+task :kill do
+  system("kill `cat tmp/pids/server.pid`")
 end
