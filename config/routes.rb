@@ -6,7 +6,12 @@ FirstApp::Application.routes.draw do
   root 'pages#home'
 
   get '/' => 'pages#home'
+
   get '/writing' => 'pages#writing'
+
+  get '/cv' => 'pages#cv'
+
+  get '/download_cv' => 'pages#download_cv'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
