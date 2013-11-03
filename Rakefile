@@ -168,6 +168,17 @@ task :log do
 end
 
 
+task :server do
+  kill()
+  system("rails server")
+end
+
+
 task :kill do
+  kill()
+end
+
+
+def kill()
   system("kill `cat tmp/pids/server.pid 2> /dev/null` 2> /dev/null")
 end
