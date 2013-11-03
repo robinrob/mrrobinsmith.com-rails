@@ -13,7 +13,9 @@ FirstApp::Application.routes.draw do
 
   get '/download_cv' => 'cv#download'
 
-  get 'blog' => 'blog#home'
+  get '/blog' => 'blog#home'
+
+  get '/programming' => 'programming#home'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
