@@ -3,15 +3,17 @@ FirstApp::Application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'pages#home'
+  root 'home#home'
 
   get '/' => 'pages#home'
 
-  get '/writing' => 'pages#writing'
+  get '/writing' => 'writing#home'
 
-  get '/cv' => 'pages#cv'
+  get '/cv' => 'cv#home'
 
-  get '/download_cv' => 'pages#download_cv'
+  get '/download_cv' => 'cv#download'
+
+  get 'blog' => 'blog#home'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
