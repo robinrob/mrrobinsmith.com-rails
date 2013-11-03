@@ -137,6 +137,7 @@ end
 
 def deploy
   do_install()
+  system("rake assets:precompile")
   system("git push heroku master")
 end  
 
