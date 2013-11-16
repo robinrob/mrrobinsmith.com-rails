@@ -130,8 +130,8 @@ end
 
 
 def deploy
-  do_install()
-  save()
+  Rake::Task["install"].execute()
+  Rake::Task["save"].execute()
   system("rake assets:precompile")
   system("git push heroku master")
 end  
