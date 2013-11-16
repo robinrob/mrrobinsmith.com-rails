@@ -18,7 +18,6 @@ end
 
 def do_install()
   install_ruby()
-  install_gems()
 end
 
 
@@ -35,11 +34,6 @@ end
 
 def rvm(command)
   system("rvm " + command)
-end
-
-
-def install_gems()
-  system("bundle install")
 end
 
 
@@ -137,6 +131,7 @@ end
 
 def deploy
   do_install()
+  save()
   system("rake assets:precompile")
   system("git push heroku master")
 end  
