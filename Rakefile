@@ -177,3 +177,10 @@ end
 def kill()
   system("kill `cat tmp/pids/server.pid 2> /dev/null` 2> /dev/null")
 end
+
+desc "Pings PING_URL to keep a dyno alive"
+task :dyno_ping do
+  require "net/http"
+
+  Net::HTTP.get_response(URI('http://mrrobinsmith.com'))
+end
