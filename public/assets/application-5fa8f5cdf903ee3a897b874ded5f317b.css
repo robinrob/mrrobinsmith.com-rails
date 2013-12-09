@@ -8,9 +8,10 @@
  * You're free to add application-wide styles to this file and they'll appear at the top of the
  * compiled file, but it's generally better to create a new file per style scope.
  *
- *= require_self
- *= require_tree .
+
+
  */
+
 
 
 body { padding-top: 40px; }
@@ -18,4 +19,8 @@ body { padding-top: 40px; }
 div#page {
     margin-left:50px;
     margin-right:300px;
+}
+
+div#login {
+    font-weight: bold !important;
 }

@@ -1,4 +1,5 @@
 FirstApp::Application.routes.draw do
+  get "auth/login"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -16,6 +17,8 @@ FirstApp::Application.routes.draw do
   get '/blog' => 'blog#home'
 
   get '/programming' => 'programming#home'
+
+  get '/login' => 'auth#login'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
