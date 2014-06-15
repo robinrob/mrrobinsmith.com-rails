@@ -17,7 +17,7 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: first_app_development
+  database: mrrobinsmith_development
   pool: 5
   username: msl
   password:
