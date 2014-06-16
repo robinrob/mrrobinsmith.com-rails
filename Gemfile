@@ -5,7 +5,7 @@ ruby '2.1.1'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.1'
 
-# Use postgresql as the database for Active Record
+# Use postgresql as the database for Active Question
 gem 'pg'
 
 # Use SCSS for stylesheets
