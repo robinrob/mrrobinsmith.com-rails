@@ -18,7 +18,7 @@ FirstApp::Application.routes.draw do
 
   get '/programming' => 'programming#home'
 
-  get '/login' => 'auth#login'
+  get '/login' => 'auth#home'
   
 
   # Example of regular route:
