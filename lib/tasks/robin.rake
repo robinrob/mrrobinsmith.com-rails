@@ -155,6 +155,7 @@ end
 
 
 task :deploy do
+  system("heroku run rake db:migrate")
   Rake::Task["install"].execute()
   Rake::Task["save"].execute()
   system("rake assets:precompile")
