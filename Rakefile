@@ -1,6 +1,8 @@
 require 'csv'
 require 'colorize'
+require File.expand_path('../config/application', __FILE__)
 
+Rails.application.load_tasks
 
 HOME = File.expand_path("../", __FILE__)
 
