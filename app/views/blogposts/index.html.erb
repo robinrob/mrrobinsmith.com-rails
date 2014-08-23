@@ -18,3 +18,8 @@
 <div>
   <h2>Robin Smith Software Blog</h2>
 </div>
+
+<% @blogposts.each do |blogpost| %>
+    <h3><%= blogpost.title %></h3>
+    <%= blogpost.body %>
+<% end %>
