@@ -1,6 +1,6 @@
 # encoding: UTF-8
 # This file is auto-generated from the current state of the database. Instead
-# of editing this file, please use the migrations feature of Active Question to
+# of editing this file, please use the migrations feature of Active Record to
 # incrementally modify your database, and then regenerate this schema definition.
 #
 # Note that this schema.rb definition is the authoritative source for your
@@ -11,17 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131116130720) do
+ActiveRecord::Schema.define(version: 20140823075407) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "blog_posts", force: true do |t|
+  create_table "blogposts", force: true do |t|
     t.string   "title"
     t.text     "body"
-    t.date     "date"
-    t.boolean  "published"
-    t.string   "author"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
