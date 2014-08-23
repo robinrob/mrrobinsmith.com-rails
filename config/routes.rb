@@ -14,11 +14,13 @@ FirstApp::Application.routes.draw do
 
   get '/download_cv' => 'cv#download'
 
-  get '/blog' => 'blog#home'
-
   get '/programming' => 'programming#home'
 
   get '/login' => 'auth#home'
+
+  get '/blogposts/index' => 'blogposts#index'
+
+  resources :blogposts
   
 
   # Example of regular route:

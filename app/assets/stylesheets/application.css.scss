@@ -17,11 +17,28 @@
 
 body { padding-top: 40px; }
 
-div#page {
-    margin-left:50px;
-    margin-right:300px;
-}
-
 div#login {
     font-weight: bold !important;
+}
+
+.standard-padding {
+  padding-left: 10%;
+  padding-right: 20%;
+}
+
+.page-margin {
+  padding-bottom: 40px;
+}
+
+.navbar-bottom {
+  height: 80px;
+}
+
+.input {
+  width: 80%;
+}
+
+#form input {
+  width: 80%;
+  height: 2.5em;
 }

@@ -1,0 +1,16 @@
+<h2>New Blog Post</h2>
+
+<div class="row" id="form">
+  <div class="span6">
+    <%= form_for :blogpost, :url => blogposts_path do |f| %>
+
+        <%= f.label :title, :maxlength => "254"%>
+        <%= f.text_field :title %>
+
+        <%= f.label :body %>
+        <%= f.text_area :body, :class => "input"%>
+
+        <%= f.submit "Create Post", class: "btn btn-large btn-primary" %>
+    <% end %>
+  </div>
+</div>
