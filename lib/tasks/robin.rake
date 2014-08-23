@@ -321,6 +321,22 @@ def each_sub(command, repo="./", recursive=true)
   Dir.chdir(parent_dir)
 end
 
+
 def branch()
   `git branch`[2..-2]
+end
+
+task :server do
+  kill()
+  system("rails server")
+end
+
+
+task :kill do
+  kill()
+end
+
+
+def kill()
+  system("kill `cat tmp/pids/server.pid 2> /dev/null` 2> /dev/null")
 end
