@@ -6,12 +6,12 @@ class BlogpostsController < ApplicationController
   end
 
   def create
-    @blogpost = BlogPost.new(blogpost_params)
-
-    puts params[:blogpost]
-
-    @blogpost.save
+    render text: blogpost_params[:@blogpost].inspect
+    # @blogpost = BlogPost.new(blogpost_params)
+    #
+    # @blogpost.save
     # redirect_to @blogpost
+    # redirect_to root_url
   end
 
   private
@@ -19,7 +19,7 @@ class BlogpostsController < ApplicationController
     params.require(:blogpost).permit(:title, :body)
   end
 
-  def show
-    @blogpost = BlogPost.find(params[:id])
-  end
+  # def show
+  #   @blogpost = BlogPost.find(params[:id])
+  # end
 end
