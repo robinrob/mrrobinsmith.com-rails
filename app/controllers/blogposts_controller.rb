@@ -13,8 +13,32 @@ class BlogpostsController < ApplicationController
     redirect_to '/blogposts/index'
   end
 
+  def update
+    @blogpost = Blogpost.find(params[:id])
+
+    if @blogpost.update(blogpost_params)
+      redirect_to @blogpost
+    else
+      render 'edit'
+    end
+  end
+
+  def edit
+    @blogpost = Blogpost.find(params[:id])
+  end
+
   def show
     @blogpost = Blogpost.find(params[:id])
+  end
+
+  def destroy
+    @blogpost = Blogpost.find(params[:id])
+    @blogpost.destroy
+    @blogpost
+  end
+
+  def admin
+    @blogposts = Blogpost.all
   end
 
   private

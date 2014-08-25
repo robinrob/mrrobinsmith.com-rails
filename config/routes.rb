@@ -20,6 +20,8 @@ FirstApp::Application.routes.draw do
 
   get '/blogposts/index' => 'blogposts#index'
 
+  get '/blogposts/admin' => 'blogposts#admin'
+
   resources :blogposts
   
 

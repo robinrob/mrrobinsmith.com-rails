@@ -4,13 +4,19 @@
   <div class="span6">
     <%= form_for :blogpost, :url => blogposts_path do |f| %>
 
-        <%= f.label :title, :maxlength => "254"%>
-        <%= f.text_field :title %>
+        <p>
+            <%= f.label :title, :maxlength => "254"%>
+            <%= f.text_field :title %>
+        </p>
 
-        <%= f.label :body %>
-        <%= f.text_area :body, :class => "input"%>
+        <p>
+            <%= f.label :body %>
+            <%= f.text_area :body, :class => "input"%>
+        </p>
 
-        <%= f.submit "Create Post", class: "btn btn-large btn-primary" %>
+        <p>
+            <%= f.submit "Create Post", class: "btn btn-large btn-primary" %>
+        </p>
     <% end %>
   </div>
 </div>

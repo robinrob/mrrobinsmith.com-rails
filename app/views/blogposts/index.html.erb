@@ -1,25 +1,41 @@
-<div class="navbar navbar-fixed-bottom">
-  <div class="navbar-inner navbar-bottom">
-    <div class="container standard-padding">
-      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </a>
-      <a class="brand" href="/blogposts">Blog</a>
-      <div class="nav-collapse">
-        <ul class="nav">
-          <li><%= link_to "New Post", '/blogposts/new'%></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
 <div>
   <h2>Robin Smith Software Blog</h2>
 </div>
 
-<% @blogposts.each do |blogpost| %>
-    <h3><%= blogpost.title %></h3>
-    <%= blogpost.body %>
-<% end %>
+<div class="page-margin">
+    <div class="row" id="form">
+        <div class="span6">
+            <%= form_for :blogpost, :url => blogposts_path do |f| %>
+
+                <% @blogposts.each do |blogpost| %>
+                    <p>
+                        <h3><%= blogpost.title %></h3>
+                    </p>
+                    <p>
+                        <%= "#{blogpost.preview} ..." %>
+                        <%= link_to 'Show', blogpost_path(blogpost) %></td>
+                    </p>
+                <% end %>
+            <% end %>
+        </div>
+    </div>
+</div>
+
+<div class="navbar navbar-fixed-bottom">
+    <div class="navbar-inner navbar-bottom">
+        <div class="container standard-padding">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+            <a class="brand" href="/blogposts">Blog</a>
+            <div class="nav-collapse">
+                <ul class="nav">
+                    <li><%= link_to "New Post", '/blogposts/new'%></li>
+                    <li><%= link_to "Admin", '/blogposts/admin'%></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

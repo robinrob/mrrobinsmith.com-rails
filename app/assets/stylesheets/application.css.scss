@@ -27,7 +27,7 @@ div#login {
 }
 
 .page-margin {
-  padding-bottom: 40px;
+  margin-bottom: 10%;
 }
 
 .navbar-bottom {
@@ -35,10 +35,18 @@ div#login {
 }
 
 .input {
-  width: 80%;
+  width: 100%;
 }
 
 #form input {
-  width: 80%;
+  width: 100%;
   height: 2.5em;
+}
+
+.input-area {
+  height: 20em;
+}
+
+.scroll-container {
+  overflow: scroll;
 }
