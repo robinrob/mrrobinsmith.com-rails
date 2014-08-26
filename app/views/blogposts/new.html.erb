@@ -1,4 +1,4 @@
-<h2>New Blog Post</h2>
+<h1>New Blog Post</h1>
 
 <div class="row" id="form">
   <div class="span6">
@@ -11,11 +11,11 @@
 
         <p>
             <%= f.label :body %>
-            <%= f.text_area :body, :class => "input"%>
+            <%= f.text_area :body, :class => "wide"%>
         </p>
 
         <p>
-            <%= f.submit "Create Post", class: "btn btn-large btn-primary" %>
+            <%= f.submit "Create Post", :class => "btn btn-large btn-primary wide" %>
         </p>
     <% end %>
   </div>

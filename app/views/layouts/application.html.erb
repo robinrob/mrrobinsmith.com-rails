@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>Robin Smith Software&#8482</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= stylesheet_link_tag    "application", :media => "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
   <%= favicon_link_tag '/favicon.ico' %>
@@ -23,6 +23,7 @@
           <li><%= link_to "Blog", '/blogposts'%></li>
           <li><%= link_to "Programming", '/programming'%></li>
           <li><%= link_to "CV", '/cv'%></li>
+          <li><%= link_to "CSS Face", '/face'%></li>
         </ul>
         <ul class="nav pull-right standard-padding">
           <li><%= link_to "Login", '/login'%></li>

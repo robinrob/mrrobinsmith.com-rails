@@ -2,7 +2,7 @@
 
 <div class="row" id="form">
     <div class="span6">
-        <%= form_for :blogpost, url: blogpost_path(@blogpost), method: :patch do |f| %>
+        <%= form_for :blogpost, :url => blogpost_path(@blogpost), :method => :patch do |f| %>
             <% if @blogpost.errors.any? %>
                 <div id="error_explanation">
                     <h2><%= pluralize(@blogpost.errors.count, "error") %> prohibited
@@ -23,7 +23,7 @@
 
             <%-%>
             <br>
-            <%= f.submit "Update Post", class: "btn btn-large btn-primary" %>
+            <%= f.submit "Update Post", :class => "btn btn-large btn-primary" %>
         <% end %>
     </div>
 </div>

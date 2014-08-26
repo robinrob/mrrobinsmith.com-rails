@@ -22,6 +22,8 @@ FirstApp::Application.routes.draw do
 
   get '/blogposts/admin' => 'blogposts#admin'
 
+  get '/face' => 'home#face'
+
   resources :blogposts
   
 

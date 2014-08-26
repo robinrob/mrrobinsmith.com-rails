@@ -1,3 +1,160 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.scss.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.face a {
+  font-size: 20px;
+  position: relative;
+}
+
+.face {
+  padding-top: 20px;
+  width: 800px;
+  text-align: center;
+}
+
+.eyes {
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
+}
+
+.eye {
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  display: inline-block;
+  background-color: black;
+  color: lawngreen;
+}
+
+.eye:hover {
+  border-radius: 110px;
+}
+
+.eye a {
+  top: 90px;
+}
+
+.left-eye {
+  /* When transition is defined on element, transition occurs on hover-off as well as hover-on.*/
+  transition: all 1s ease-out;
+  /* Equivalent to this: */
+  /*transition-property: background-color;*/
+  /*transition-duration: .4s;*/
+  /*transition-timing-function: ease-out;*/
+  /*transition-delay: 0s;*/
+  float: left;
+  clear: left;
+}
+
+.eye:hover {
+  color: red;
+  background-color: red;
+}
+
+/*.left-eye a {*/
+/*color: #ffff00;*/
+/*}*/
+
+.left-eye a:hover {
+  text-decoration: none;
+  color: #ffff00;
+}
+
+.right-eye {
+  transition: all 1s ease-out;
+  float: right;
+  clear: right;
+}
+
+.right-eye:hover {
+  width: 220px;
+  height: 220px;
+  background-color: magenta;
+  color: blue;
+}
+
+.nose {
+  position: relative;
+  top: 0px;
+  width: 150px;
+  height: 150px;
+  margin-right: auto;
+  margin-left: auto;
+  transition: all .4s ease-out;
+  background-color: red;
+  border-radius: 75px;
+}
+
+.nose a {
+  top: 75px;
+}
+
+.nose:hover {
+  top: 20px;
+  color: lawngreen;
+  width: 230px;
+  background-color: black;
+}
+
+.mouth {
+  height: 150px;
+  /*background-color: yellow;*/
+  top: 0px;
+  display: inline-block;
+  position: relative;
+  transition: all 0.4s ease-out;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+.mouth:hover {
+  top: -30px;
+}
+
+.mouth > :first-child {
+  top: 33.33%;
+}
+
+.mouth > :first-child:hover {
+  top: 0%;
+}
+
+.mouth > :last-child {
+  top: 33.33%;
+}
+
+.mouth > :last-child:hover{
+  top: 0%;
+}
+
+.tooth {
+  position: relative;
+  top: 66%;
+  display: inline-block;
+  background-color: dimgrey;
+  width: 50px;
+  height: 50px;
+  transition: all 1s ease-out;
+}
+
+.tooth:hover {
+  top: 33.33%;
+  background-color: red;
+}
+
+.cf:before, .cf:after {
+  content: " ";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  *zoom: 1; /* for IE6 and IE7 */
+}
