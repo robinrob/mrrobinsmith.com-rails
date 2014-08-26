@@ -15,7 +15,10 @@
 
 @import "bootstrap";
 
-body { padding-top: 40px; }
+body {
+  padding-top: 40px;
+  padding-left: 10%;
+}
 
 div#login {
     font-weight: bold !important;
