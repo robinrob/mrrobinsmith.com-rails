@@ -2,7 +2,7 @@
 // They will automatically be included in application.css.scss.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.face a {
+.face span {
   font-size: 20px;
   position: relative;
 }
@@ -32,7 +32,7 @@
   border-radius: 110px;
 }
 
-.eye a {
+.eye span {
   top: 90px;
 }
 
@@ -53,11 +53,7 @@
   background-color: red;
 }
 
-/*.left-eye a {*/
-/*color: #ffff00;*/
-/*}*/
-
-.left-eye a:hover {
+.left-eye span:hover {
   text-decoration: none;
   color: #ffff00;
 }
@@ -87,7 +83,7 @@
   border-radius: 75px;
 }
 
-.nose a {
+.nose span {
   top: 75px;
 }
 
