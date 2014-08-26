@@ -28,7 +28,6 @@
 
 .eyebrows:hover {
   width: 400px;
-  color: darkred;
 }
 
 .eyebrow {
@@ -36,6 +35,7 @@
   display: inline-block;
   width: 150px;
   height: 50px;
+  color: black;
   background-color: #000000;
   margin-bottom: 15px;
   transition: all 1s ease-out;
