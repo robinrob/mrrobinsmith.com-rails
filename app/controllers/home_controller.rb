@@ -4,4 +4,7 @@ class HomeController < ApplicationController
 
   def face
   end
+
+  def gradient
+  end
 end

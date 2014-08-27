@@ -24,6 +24,8 @@ FirstApp::Application.routes.draw do
 
   get '/face' => 'home#face'
 
+  get '/css/gradient' => 'home#gradient'
+
   resources :blogposts
   
 
