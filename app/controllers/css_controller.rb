@@ -10,4 +10,7 @@ class CssController < ApplicationController
 
   def test
   end
+
+  def eyes
+  end
 end

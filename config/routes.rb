@@ -28,6 +28,8 @@ FirstApp::Application.routes.draw do
 
   get '/css/test' => 'css#test'
 
+  get '/eyes' => 'css#eyes'
+
   resources :blogposts
   
 
