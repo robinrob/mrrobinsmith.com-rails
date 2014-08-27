@@ -22,9 +22,11 @@ FirstApp::Application.routes.draw do
 
   get '/blogposts/admin' => 'blogposts#admin'
 
-  get '/face' => 'home#face'
+  get '/face' => 'css#face'
 
-  get '/css/gradient' => 'home#gradient'
+  get '/css/gradient' => 'css#gradient'
+
+  get '/css/test' => 'css#test'
 
   resources :blogposts
   
