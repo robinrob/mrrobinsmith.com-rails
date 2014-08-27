@@ -158,7 +158,8 @@ task :deploy do
   system("heroku run rake db:migrate")
   Rake::Task["install"].execute()
   Rake::Task["save"].execute()
-  system("rake assets:precompile")
+  system("RAILS_ENV=production bundle exec rake assets:precompile")
+  # system("rake assets:precompile")
   system("git push heroku master")
 end
 
