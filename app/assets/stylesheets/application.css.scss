@@ -13,27 +13,27 @@
  */
 @import "bootstrap";
 
-html, body, main {
-    height: 100%;
+html, body, .main {
     min-height: 100%;
 }
 
+body {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(215, 215, 215, 0.5)),
+    linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(215, 215, 215, 0.5));
+}
+
 h1 {
-    //    padding-top: 30px !important;
+    padding-top: 1%;
 }
 
 .main {
     margin-top: -20px;
     min-height: 110%;
-    height: 110%;
     background-size: 100%;
     margin-left: 10%;
     margin-right: 20%;
     //    padding-left: 10%;
     //    padding-right: 20%;
-
-    //    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(215, 215, 215, 0.5)),
-    //    linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(215, 215, 215, 0.5));
 
     //    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(0, 0, 255, 0.5)),
     //    linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(0, 0, 255, 0.5));
@@ -49,12 +49,12 @@ h1 {
 }
 
 .navbar, .navbar-inner, .container {
-        font-size: 20px;
+    font-size: 15px;
 }
 
-//.brand {
-//        font-size: 20px !important;
-//}
+.brand {
+        font-size: 25px !important;
+}
 
 .box p {
     position: relative;
@@ -110,8 +110,12 @@ h1 {
 }
 
 .footer {
-    font-size: 10px;
-    text-align: right;
+  text-align: right;
+    position:absolute;
+    bottom:0;
+    width:80%;
+    height:60px;   /* Height of the footer */
+//    background-color: red;
 }
 
 .cf:before, .cf:after {
@@ -144,7 +148,7 @@ h1 {
     }
 }
 
-@media (max-width: 760px) {
+@media (max-width: 770px) {
     .main {
         margin-left: -10px;
         margin-right: -10px;
