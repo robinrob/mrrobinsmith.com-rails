@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
   <title>Robin Smith Software&#8482</title>
   <%= stylesheet_link_tag    "application", :media => "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
@@ -19,7 +19,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </a>
-      <a class="brand" href="/">Robin Smith Software&#8482</a>
+      <a class="brand robin" href="/">Robin Smith Software&#8482</a>
       <div class="nav-collapse">
         <ul class="nav">
           <li><%= link_to "Blog", '/blogposts'%></li>
@@ -36,9 +36,13 @@
 </div>
 
 <div class="main">
-    <div class="box"><p>Developer mode</p></div>
+    <div class="developer"><p>Developer mode</p></div>
     <%= yield %>
+    <!--<div class="footer">-->
+        <!--<p>Copyright (c) 2014</p>-->
+    <!--</div>-->
 </div>
 
 </body>
+
 </html>

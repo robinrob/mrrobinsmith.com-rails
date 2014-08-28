@@ -2,23 +2,21 @@
   <h1>Robin Smith Software Blog</h1>
 </div>
 
-<div class="page-margin">
-    <div class="row" id="form">
-        <div class="span6">
-            <%= form_for :blogpost, :url => blogposts_path do |f| %>
+<div class="row" id="form">
+    <div class="span6">
+        <%= form_for :blogpost, :url => blogposts_path do |f| %>
 
-                <% @blogposts.each do |blogpost| %>
-                    <p>
-                        <h3><%= blogpost.title %></h3>
-                    </p>
-                    <p>
-                        <%= "#{blogpost.preview} ..." %>
-                        <%= link_to 'Show', blogpost_path(blogpost) %></td>
-                        <!--<%= link_to 'Delete', blogpost_path(blogpost), :method => :delete %>-->
-                    </p>
-                <% end %>
+            <% @blogposts.each do |blogpost| %>
+                <p>
+                    <h3><%= blogpost.title %></h3>
+                </p>
+                <p>
+                    <%= "#{blogpost.preview} ..." %>
+                    <%= link_to 'Show', blogpost_path(blogpost) %></td>
+                    <!--<%= link_to 'Delete', blogpost_path(blogpost), :method => :delete %>-->
+                </p>
             <% end %>
-        </div>
+        <% end %>
     </div>
 </div>
 
