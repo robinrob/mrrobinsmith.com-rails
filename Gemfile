@@ -50,7 +50,9 @@ gem 'debugger', group: [:development, :test]
 
 gem 'therubyracer'
 
-gem 'bootstrap-sass', '~> 2.3.2.2'
+gem 'bootstrap-sass'
+
+gem 'twitter-bootstrap-rails'
 
 gem 'newrelic_rpm'
 
