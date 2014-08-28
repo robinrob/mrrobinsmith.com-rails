@@ -19,23 +19,24 @@ html, body, main {
 }
 
 h1 {
-    padding-top: 30px !important;
+    //    padding-top: 30px !important;
 }
 
 .main {
-    margin-top: -40px;
+    margin-top: -20px;
     min-height: 110%;
     height: 110%;
     background-size: 100%;
-    height: 100% !important;
-    padding-left: 10%;
-    padding-right: 20%;
+    margin-left: 10%;
+    margin-right: 20%;
+    //    padding-left: 10%;
+    //    padding-right: 20%;
 
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(215, 215, 215, 0.5)),
-    linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(215, 215, 215, 0.5));
+    //    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(215, 215, 215, 0.5)),
+    //    linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(215, 215, 215, 0.5));
 
-//    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(0, 0, 255, 0.5)),
-//    linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(0, 0, 255, 0.5));
+    //    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(0, 0, 255, 0.5)),
+    //    linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(0, 0, 255, 0.5));
 }
 
 .developer {
@@ -48,13 +49,12 @@ h1 {
 }
 
 .navbar, .navbar-inner, .container {
-    height: 1em;
-    font-size: 20px;
+        font-size: 20px;
 }
 
-.brand {
-    font-size: 30px !important;
-}
+//.brand {
+//        font-size: 20px !important;
+//}
 
 .box p {
     position: relative;
@@ -127,12 +127,11 @@ h1 {
     *zoom: 1; /* for IE6 and IE7 */
 }
 
-// Point at which bootstrap nav-bar collapses
+//Point at which bootstrap nav-bar collapses
 @media (max-width: 980px) {
     .main {
         margin-left: 10px;
         margin-right: 10px;
-        text-align: left;
     }
 
     div .container {
