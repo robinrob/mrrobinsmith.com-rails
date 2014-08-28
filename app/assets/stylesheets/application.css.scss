@@ -118,6 +118,10 @@ h1 {
 //    background-color: red;
 }
 
+.footer p {
+    visibility: inherit;
+}
+
 .cf:before, .cf:after {
     content: " ";
     display: table;
@@ -157,5 +161,21 @@ h1 {
     .container {
         padding-left: 0px;
         padding-right: 0px;
+    }
+}
+
+@media (max-height: 500px) {
+    .main {
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+
+    .container {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .footer {
+        visibility: hidden;
     }
 }
