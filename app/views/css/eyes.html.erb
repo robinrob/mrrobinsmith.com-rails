@@ -7,16 +7,20 @@
 
     <style type='text/css'>
 
+        .main {
+            margin-top: -17px;
+            width: 800px;
+        }
+
         body {
             background-color: darkred;
+            background-image: linear-gradient(to bottom, rgba(139, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), linear-gradient(to right, rgba(139, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
         }
 
         .box-row {
-            width: 800px;
-            margin: auto;
+            line-height: 0px;
+            width: 1000px;
             text-align: center;
-            display: inline-block;
-            text-align: left
         }
 
         .box {
@@ -24,14 +28,17 @@
             height: 100px;
             text-align: center;
             display: inline-block;
-            background-color: black;
-            transition: all .8s ease-out;
+            background-color: transparent;
             overflow: inherit;
+            margin: -2px -2px -3px -2px;
         }
 
         .box:hover {
-            width: 0px;
-            height: 0px;
+            transition: all 1s ease-out;
+            border-radius: 100px;
+            box-shadow: 10px 10px 10px 10px;
+            /*width: 150px;*/
+            /*height: 150px;*/
         }
 
         /* This will contain images within box's borders when box shrinks. */
@@ -44,35 +51,34 @@
             overflow: inherit;
         }
 
+        img:hover {
+            transition: all 1s ease-out;
+            transform: rotate(720deg);
+        }
+
         /* Use 'media queries' to adjust CSS for specific display conditions (try manually resizing browser) */
-        @media (max-width: 800px) {
-            .box-row {
-                width: 800px;
-            }
+        /*@media (max-width: 1000px) {*/
+        /*body {*/
+        /*background-color: darkred;*/
+        /*}*/
+        /*}*/
+        /*@media (max-width: 100px) {*/
+        /*body {*/
+        /*background-color: orange;*/
+        /*}*/
+        /*}*/
+        /**/
 
-            body {
-                background-color: yellow;
-            }
-        }
-        @media (max-width: 700px) {
-            .box-row {
-                width: 700px;
-            }
-
-            body {
-                background-color: blue;
-            }
-        }
-        @media (max-width: 600px) {
-            .box-row {
-                width: 600px;
-            }
-        }
-        @media (max-width: 700px) {
-            .box-row {
-                width: 700px;
-            }
-        }
+        /*@media (max-width: 400px) {*/
+        /*body {*/
+        /*background-color: yellow;*/
+        /*}*/
+        /*}*/
+        /*@media (max-width: 200px) {*/
+        /*body {*/
+        /*background-color: green;*/
+        /*}*/
+        /*}*/
 
     </style>
 
@@ -80,85 +86,79 @@
 </head>
 <body>
 
-<div class="center-global contain">
-    <div class="box"><img src="/assets/images/eye.png"/></div>
-    <div class="box"><img src="/assets/images/eye.png"/></div>
-    <div class="box"><img src="/assets/images/eye.png"/></div>
-    <div class="box"><img src="/assets/images/eye.png"/></div>
-    <div class="box"><img src="/assets/images/eye.png"/></div>
-    <div class="box"><img src="/assets/images/eye.png"/></div>
-    <div class="box"><img src="/assets/images/eye.png"/></div>
-    <div class="box"><img src="/assets/images/eye.png"/></div>
-</div>
-<div class="center-global spill">
-    <div class="box"><img src="/assets/images/eye.png"/></div>
-    <div class="box"><img src="/assets/images/eye.png"/></div>
-    <div class="box"><img src="/assets/images/eye.png"/></div>
-    <div class="box"><img src="/assets/images/eye.png"/></div>
-    <div class="box"><img src="/assets/images/eye.png"/></div>
-    <div class="box"><img src="/assets/images/eye.png"/></div>
-    <div class="box"><img src="/assets/images/eye.png"/></div>
-    <div class="box"><img src="/assets/images/eye.png"/></div>
-</div>
-<div class="center-global contain">
-    <div class="box"><img src="/assets/images/eye.png"/></div>
-    <div class="box"><img src="/assets/images/eye.png"/></div>
-    <div class="box"><img src="/assets/images/eye.png"/></div>
-    <div class="box"><img src="/assets/images/eye.png"/></div>
-    <div class="box"><img src="/assets/images/eye.png"/></div>
-    <div class="box"><img src="/assets/images/eye.png"/></div>
-    <div class="box"><img src="/assets/images/eye.png"/></div>
-    <div class="box"><img src="/assets/images/eye.png"/></div>
-</div>
-<div class="center-global spill">
-    <div class="box"><img src="/assets/images/eye.png"/></div>
-    <div class="box"><img src="/assets/images/eye.png"/></div>
-    <div class="box"><img src="/assets/images/eye.png"/></div>
-    <div class="box"><img src="/assets/images/eye.png"/></div>
-    <div class="box"><img src="/assets/images/eye.png"/></div>
-    <div class="box"><img src="/assets/images/eye.png"/></div>
-    <div class="box"><img src="/assets/images/eye.png"/></div>
-    <div class="box"><img src="/assets/images/eye.png"/></div>
-</div>
-<div class="center-global contain">
-    <div class="box"><img src="/assets/images/eye.png"/></div>
-    <div class="box"><img src="/assets/images/eye.png"/></div>
-    <div class="box"><img src="/assets/images/eye.png"/></div>
-    <div class="box"><img src="/assets/images/eye.png"/></div>
-    <div class="box"><img src="/assets/images/eye.png"/></div>
-    <div class="box"><img src="/assets/images/eye.png"/></div>
-    <div class="box"><img src="/assets/images/eye.png"/></div>
-    <div class="box"><img src="/assets/images/eye.png"/></div>
-</div>
-<div class="center-global spill">
-    <div class="box"><img src="/assets/images/eye.png"/></div>
-    <div class="box"><img src="/assets/images/eye.png"/></div>
-    <div class="box"><img src="/assets/images/eye.png"/></div>
-    <div class="box"><img src="/assets/images/eye.png"/></div>
-    <div class="box"><img src="/assets/images/eye.png"/></div>
-    <div class="box"><img src="/assets/images/eye.png"/></div>
-    <div class="box"><img src="/assets/images/eye.png"/></div>
-    <div class="box"><img src="/assets/images/eye.png"/></div>
-</div>
-<div class="center-global contain">
-    <div class="box"><img src="/assets/images/eye.png"/></div>
-    <div class="box"><img src="/assets/images/eye.png"/></div>
-    <div class="box"><img src="/assets/images/eye.png"/></div>
-    <div class="box"><img src="/assets/images/eye.png"/></div>
-    <div class="box"><img src="/assets/images/eye.png"/></div>
-    <div class="box"><img src="/assets/images/eye.png"/></div>
-    <div class="box"><img src="/assets/images/eye.png"/></div>
-    <div class="box"><img src="/assets/images/eye.png"/></div>
-</div>
-<div class="center-global spill">
-    <div class="box"><img src="/assets/images/eye.png"/></div>
-    <div class="box"><img src="/assets/images/eye.png"/></div>
-    <div class="box"><img src="/assets/images/eye.png"/></div>
-    <div class="box"><img src="/assets/images/eye.png"/></div>
-    <div class="box"><img src="/assets/images/eye.png"/></div>
-    <div class="box"><img src="/assets/images/eye.png"/></div>
-    <div class="box"><img src="/assets/images/eye.png"/></div>
-    <div class="box"><img src="/assets/images/eye.png"/></div>
+<div class="main">
+    <div class="box contain"><img src="/assets/images/eye.png"/></div>
+    <div class="box contain"><img src="/assets/images/eye.png"/></div>
+    <div class="box contain"><img src="/assets/images/eye.png"/></div>
+    <div class="box contain"><img src="/assets/images/eye.png"/></div>
+    <div class="box contain"><img src="/assets/images/eye.png"/></div>
+    <div class="box contain"><img src="/assets/images/eye.png"/></div>
+    <div class="box contain"><img src="/assets/images/eye.png"/></div>
+    <div class="box contain"><img src="/assets/images/eye.png"/></div>
+    <div class="box contain"><img src="/assets/images/eye.png"/></div>
+    <div class="box contain"><img src="/assets/images/eye.png"/></div>
+    <div class="box contain"><img src="/assets/images/eye.png"/></div>
+    <div class="box contain"><img src="/assets/images/eye.png"/></div>
+    <div class="box contain"><img src="/assets/images/eye.png"/></div>
+    <div class="box contain"><img src="/assets/images/eye.png"/></div>
+    <div class="box contain"><img src="/assets/images/eye.png"/></div>
+    <div class="box contain"><img src="/assets/images/eye.png"/></div>
+    <div class="box contain"><img src="/assets/images/eye.png"/></div>
+    <div class="box contain"><img src="/assets/images/eye.png"/></div>
+    <div class="box contain"><img src="/assets/images/eye.png"/></div>
+    <div class="box contain"><img src="/assets/images/eye.png"/></div>
+    <div class="box contain"><img src="/assets/images/eye.png"/></div>
+    <div class="box contain"><img src="/assets/images/eye.png"/></div>
+    <div class="box contain"><img src="/assets/images/eye.png"/></div>
+    <div class="box contain"><img src="/assets/images/eye.png"/></div>
+    <div class="box contain"><img src="/assets/images/eye.png"/></div>
+    <div class="box contain"><img src="/assets/images/eye.png"/></div>
+    <div class="box contain"><img src="/assets/images/eye.png"/></div>
+    <div class="box contain"><img src="/assets/images/eye.png"/></div>
+    <div class="box contain"><img src="/assets/images/eye.png"/></div>
+    <div class="box contain"><img src="/assets/images/eye.png"/></div>
+    <div class="box contain"><img src="/assets/images/eye.png"/></div>
+    <div class="box contain"><img src="/assets/images/eye.png"/></div>
+    <div class="box contain"><img src="/assets/images/eye.png"/></div>
+    <div class="box contain"><img src="/assets/images/eye.png"/></div>
+    <div class="box contain"><img src="/assets/images/eye.png"/></div>
+    <div class="box contain"><img src="/assets/images/eye.png"/></div>
+    <div class="box contain"><img src="/assets/images/eye.png"/></div>
+    <div class="box contain"><img src="/assets/images/eye.png"/></div>
+    <div class="box contain"><img src="/assets/images/eye.png"/></div>
+    <div class="box contain"><img src="/assets/images/eye.png"/></div>
+    <div class="box contain"><img src="/assets/images/eye.png"/></div>
+    <div class="box contain"><img src="/assets/images/eye.png"/></div>
+    <div class="box contain"><img src="/assets/images/eye.png"/></div>
+    <div class="box contain"><img src="/assets/images/eye.png"/></div>
+    <div class="box contain"><img src="/assets/images/eye.png"/></div>
+    <div class="box contain"><img src="/assets/images/eye.png"/></div>
+    <div class="box contain"><img src="/assets/images/eye.png"/></div>
+    <div class="box contain"><img src="/assets/images/eye.png"/></div>
+    <div class="box contain"><img src="/assets/images/eye.png"/></div>
+    <div class="box contain"><img src="/assets/images/eye.png"/></div>
+    <div class="box contain"><img src="/assets/images/eye.png"/></div>
+    <div class="box contain"><img src="/assets/images/eye.png"/></div>
+    <div class="box contain"><img src="/assets/images/eye.png"/></div>
+    <div class="box contain"><img src="/assets/images/eye.png"/></div>
+    <div class="box contain"><img src="/assets/images/eye.png"/></div>
+    <div class="box contain"><img src="/assets/images/eye.png"/></div>
+    <div class="box contain"><img src="/assets/images/eye.png"/></div>
+    <div class="box contain"><img src="/assets/images/eye.png"/></div>
+    <div class="box contain"><img src="/assets/images/eye.png"/></div>
+    <div class="box contain"><img src="/assets/images/eye.png"/></div>
+    <div class="box contain"><img src="/assets/images/eye.png"/></div>
+    <div class="box contain"><img src="/assets/images/eye.png"/></div>
+    <div class="box contain"><img src="/assets/images/eye.png"/></div>
+    <div class="box contain"><img src="/assets/images/eye.png"/></div>
+    <div class="box contain"><img src="/assets/images/eye.png"/></div>
+    <div class="box contain"><img src="/assets/images/eye.png"/></div>
+    <div class="box contain"><img src="/assets/images/eye.png"/></div>
+    <div class="box contain"><img src="/assets/images/eye.png"/></div>
+    <div class="box contain"><img src="/assets/images/eye.png"/></div>
+    <div class="box contain"><img src="/assets/images/eye.png"/></div>
+    <div class="box contain"><img src="/assets/images/eye.png"/></div>
+    <div class="box contain"><img src="/assets/images/eye.png"/></div>
 </div>
 
 </body>
