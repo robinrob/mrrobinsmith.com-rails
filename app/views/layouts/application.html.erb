@@ -7,7 +7,7 @@
   <%= csrf_meta_tags %>
   <%= favicon_link_tag '/favicon.ico' %>
 </head>
-<body class="page-margin standard-padding">
+<body>
 
 
 <div class="navbar navbar-fixed-top">
@@ -26,7 +26,7 @@
           <li><%= link_to "CV", '/cv'%></li>
           <li><%= link_to "CSS Face", '/face'%></li>
         </ul>
-        <ul class="nav pull-right">
+        <ul class="nav pull-right padding-right">
           <li><%= link_to "Login", '/login'%></li>
         </ul>
       </div>
@@ -34,8 +34,10 @@
   </div>
 </div>
 
-
-<%= yield %>
+<div class="main">
+    <div class="box"><p>Developer mode</p></div>
+    <%= yield %>
+</div>
 
 </body>
 </html>
