@@ -13,6 +13,7 @@
             <td><%= blogpost.body %></td>
             <td><%= link_to 'Show', blogpost_path(blogpost) %></td>
             <td><%= link_to 'Edit', edit_blogpost_path(blogpost) %></td>
+            <td><%= link_to 'Delete', blogpost_path(blogpost), :method => "delete" %></td>
         </tr>
     <% end %>
 </table>
