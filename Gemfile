@@ -16,7 +16,7 @@ gem 'high_voltage'
 gem 'colorize'
 gem 'pg'
 gem 'thin'
-gem 'bcrypt-ruby'
+gem 'bcrypt'
 
 group :development do
   gem 'better_errors'
