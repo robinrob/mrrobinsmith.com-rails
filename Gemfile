@@ -29,6 +29,5 @@ group :test do
   gem 'faker'
   gem 'launchy'
   gem 'selenium-webdriver'
-  gem 'colorize'
   gem 'pg'
 end
