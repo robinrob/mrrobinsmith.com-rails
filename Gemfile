@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 ruby '2.1.1'
+gem 'colorize'
 gem 'rails', '4.1.5'
 gem 'sass-rails', '~> 4.0.3'
 gem 'uglifier', '>= 1.3.0'
