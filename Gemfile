@@ -11,9 +11,13 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 gem 'bootstrap-sass'
 gem 'high_voltage'
+
+# Additions
 gem 'colorize'
 gem 'pg'
 gem 'thin'
+gem 'bcrypt-ruby'
+
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller', :platforms=>[:mri_21]
