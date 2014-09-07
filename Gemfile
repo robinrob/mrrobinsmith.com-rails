@@ -11,6 +11,7 @@ gem 'high_voltage'
 gem 'colorize'
 gem 'pg'
 gem 'thin'
+gem 'bcrypt'
 
 group :doc do
   gem 'sdoc', '~> 0.4.0'
