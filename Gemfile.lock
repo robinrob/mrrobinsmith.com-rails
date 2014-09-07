@@ -203,7 +203,7 @@ DEPENDENCIES
   rails (= 4.1.5)
   rails_layout
   rspec-rails
-  sass-rails (>= 3.2)
+  sass-rails (>= 3.1.4)
   sdoc (~> 0.4.0)
   selenium-webdriver
   spring
