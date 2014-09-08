@@ -13,8 +13,9 @@
  *= require bootstrap.min
  */
 
-body, body > * {
-    background-image: linear-gradient(to right, white, #d7d7d7);
+body, main {
+    background-image: linear-gradient(to right, white, #d7d7d7), linear-gradient(to bottom, white, #d7d7d7);
+    height: 100% !important;
 }
 
 nav {
@@ -25,3 +26,19 @@ nav {
 .navbar-brand {
     font-size: 25px !important;
 }
+
+.full-width {
+    width: 100%;
+}
+
+.half-width {
+    width: 50%;
+}
+
+//.col-md-2 {
+//    background-color: red;
+//}
+//
+//.col-md-4 {
+//    background-color: red;
+//}

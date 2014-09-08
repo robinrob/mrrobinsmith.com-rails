@@ -15,6 +15,11 @@ class AuthController < ApplicationController
     end
   end
 
+  def logout
+    ApplicationHelper.sign_out_user
+    redirect_to "#"
+  end
+
   def signup
 
   end

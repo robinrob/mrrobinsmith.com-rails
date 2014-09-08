@@ -10,9 +10,9 @@ Rails.application.routes.draw do
 
   get '/writing' => 'writing#home'
 
-  get '/cv' => 'cv#home'
+  get '/cv' => 'pages#cv'
 
-  get '/download_cv' => 'cv#download'
+  get '/cv/download' => 'pages#download_cv'
 
   get '/programming' => 'programming#home'
 
@@ -21,6 +21,8 @@ Rails.application.routes.draw do
   get '/signup' => 'auth#signup'
 
   get '/auth/login' => 'auth#login'
+
+  get '/auth/logout' => 'auth#logout'
 
   get '/auth/newuser' => 'auth#newuser'
 

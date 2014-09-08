@@ -1,19 +1,36 @@
-<h1>Blog Post Admin</h1>
+<% if !user_signed_in? %>
+    <h1>Blog Post Admin</h1>
 
-<table>
-    <tr>
-        <th>Title</th>
-        <th>Body</th>
-        <th colspan="2"></th>
-    </tr>
 
-    <% @blogposts.each do |blogpost| %>
-        <tr>
-            <td><%= blogpost.title %></td>
-            <td><%= blogpost.body %></td>
-            <td><%= link_to 'Show', blogpost_path(blogpost) %></td>
-            <td><%= link_to 'Edit', edit_blogpost_path(blogpost) %></td>
-            <td><%= link_to 'Delete', blogpost_path(blogpost), :method => "delete" %></td>
-        </tr>
-    <% end %>
-</table>
+        <div class="row">
+
+            <div class="col-md-1">
+                <h3>Title</h3>
+            </div>
+            <div class="col-md-7">
+                <h3>Body</h3>
+            </div>
+            <div class="col-md-1">
+                <h3>Actions</h3>
+            </div>
+        </div>
+
+        <% @blogposts.each do |blogpost| %>
+            <div class="row">
+
+                <div class="col-md-1">
+                    <%= blogpost.title %>
+                </div>
+                <div class="col-md-7">
+                    <%= blogpost.body %>
+                </div>
+                <div class="col-md-3">
+                    <%= link_to 'Show', blogpost_path(blogpost) %>
+                    <%= link_to 'Edit', edit_blogpost_path(blogpost) %>
+                    <%= link_to 'Delete', blogpost_path(blogpost), :method => "delete" %>
+                </div>
+            </div>
+            <br>
+        <% end %>
+    </table>
+<% end %>
