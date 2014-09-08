@@ -8,13 +8,17 @@ Rails.application.routes.draw do
 
   get '/' => 'pages#home'
 
+  get '/back' => 'application#back'
+
   get '/writing' => 'writing#home'
 
   get '/cv' => 'pages#cv'
 
   get '/cv/download' => 'pages#download_cv'
 
-  get '/programming' => 'programming#home'
+  get '/programming' => 'programming#index'
+
+  get '/programming/css' => 'css#index'
 
   get '/login' => 'auth#index'
 
@@ -30,65 +34,15 @@ Rails.application.routes.draw do
 
   get '/blogposts/admin' => 'blogposts#admin'
 
-  get '/face' => 'css#face'
+  get '/css/face' => 'css#face'
 
   get '/css/gradient' => 'css#gradient'
 
-  get '/css/test' => 'css#test'
-
-  get '/eyes' => 'css#eyes'
+  get '/css/eyes' => 'css#eyes'
 
   resources :blogposts
 
   resources :users
   
 
-  # Example of regular route:
-  #   get 'products/:id' => 'catalog#view'
-
-  # Example of named route that can be invoked with purchase_url(id: product.id)
-  #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
-
-  # Example resource route (maps HTTP verbs to controller actions automatically):
-  #   resources :products
-
-  # Example resource route with options:
-  #   resources :products do
-  #     member do
-  #       get 'short'
-  #       post 'toggle'
-  #     end
-  #
-  #     collection do
-  #       get 'sold'
-  #     end
-  #   end
-
-  # Example resource route with sub-resources:
-  #   resources :products do
-  #     resources :comments, :sales
-  #     resource :seller
-  #   end
-
-  # Example resource route with more complex sub-resources:
-  #   resources :products do
-  #     resources :comments
-  #     resources :sales do
-  #       get 'recent', on: :collection
-  #     end
-  #   end
-
-  # Example resource route with concerns:
-  #   concern :toggleable do
-  #     post 'toggle'
-  #   end
-  #   resources :posts, concerns: :toggleable
-  #   resources :photos, concerns: :toggleable
-
-  # Example resource route within a namespace:
-  #   namespace :admin do
-  #     # Directs /admin/products/* to Admin::ProductsController
-  #     # (app/controllers/admin/products_controller.rb)
-  #     resources :products
-  #   end
 end

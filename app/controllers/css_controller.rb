@@ -1,14 +1,11 @@
 class CssController < ApplicationController
-  def home
+  def index
   end
 
   def face
   end
 
   def gradient
-  end
-
-  def test
   end
 
   def eyes

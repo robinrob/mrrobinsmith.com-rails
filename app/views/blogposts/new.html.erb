@@ -1,20 +1,32 @@
-<% if !user_signed_in? %>
+<% if user_signed_in? %>
     <h1>New Blog Post</h1>
 
     <%= form_for :blogpost, :url => blogposts_path do |f| %>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-md-12">
+                    <%= f.label :title, :maxlength => "254" %>
+                    <br>
+                    <%= f.text_field :title, :class => "blog-input" %>
+                </div>
+            </div>
 
-        <p>
-            <%= f.label :title, :maxlength => "254" %>
-            <%= f.text_field :title %>
-        </p>
+            <div class="row">
+                <div class="col-md-12">
+                    <%= f.label :body %>
+                    <br>
+                    <%= f.text_area :body, :class => "blog-input blog-text" %>
+                </div>
+            </div>
 
-        <p>
-            <%= f.label :body %>
-            <%= f.text_area :body, :class => "wide" %>
-        </p>
-
-        <p>
-            <%= f.submit "Create Post", :class => "btn btn-large btn-primary wide" %>
-        </p>
+            <div class="row">
+                <div class="col-md-12">
+                    <%= f.label "" %>
+                    <br>
+                    <%= f.submit "Create Post", :class => "btn btn-large btn-primary blog-input" %>
+                </div>
+            </div>
+        </div>
     <% end %>
+
 <% end %>

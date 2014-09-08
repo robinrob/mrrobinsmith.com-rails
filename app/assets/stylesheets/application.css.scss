@@ -18,9 +18,18 @@ body, main {
     height: 100% !important;
 }
 
-nav {
+.nav-main {
     font-size: 18px;
-    background-image: linear-gradient(to bottom, black, #494949);
+    color: black !important;
+    background-image: linear-gradient(to bottom, #c6c6c6, white);
+}
+
+a:visited {
+    color: black;
+}
+
+.back-btn {
+    font-size: 20px !important;
 }
 
 .navbar-brand {
@@ -33,6 +42,14 @@ nav {
 
 .half-width {
     width: 50%;
+}
+
+.blog-input {
+    width: 70% !important;
+}
+
+.blog-text {
+    height: 300px;
 }
 
 //.col-md-2 {
