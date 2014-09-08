@@ -1,22 +1,22 @@
-<div class=page-header">
-    <h1>New Blog Post</h1>
+<div class="page-header">
+    <h1>Signup!</h1>
 </div>
 
-<%= form_for :blogpost, :url => blogposts_path do |f| %>
+<%= form_for :user, :url => users_path do |f| %>
     <div class="form-group">
         <div class="row">
             <div class="col-md-12">
-                <%= f.label :title, :maxlength => "254" %>
+                <%= f.label :email %>
                 <br>
-                <%= f.text_field :title, :class => "blog-input" %>
+                <%= f.text_field :email, :class => 'user-input' %>
             </div>
         </div>
 
         <div class="row">
             <div class="col-md-12">
-                <%= f.label :body %>
+                <%= f.label :password %>
                 <br>
-                <%= f.text_area :body, :class => "blog-input blog-text" %>
+                <%= f.password_field :password, :class => 'user-input' %>
             </div>
         </div>
 
@@ -24,7 +24,7 @@
             <div class="col-md-12">
                 <%= f.label "" %>
                 <br>
-                <%= f.submit "Create Post", :class => "btn btn-large btn-primary blog-input" %>
+                <%= f.submit "Sign Up!", :class => "btn btn-large btn-primary user-input" %>
             </div>
         </div>
     </div>

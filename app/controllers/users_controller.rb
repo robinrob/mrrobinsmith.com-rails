@@ -1,5 +1,11 @@
 class UsersController < ApplicationController
 
+  def new
+    if !user_signed_in?
+      redirect_to '/'
+    end
+  end
+
   def create
     email = user_params['email']
     password = user_params['password']
@@ -12,9 +18,10 @@ class UsersController < ApplicationController
 
     begin
       @user.save
-      redirect_to '/face'
+      ApplicationHelper.sign_in_user
+      redirect_to '/programming'
     rescue
-      redirect_to '/signup'
+      redirect_to '/'
     end
 
   end

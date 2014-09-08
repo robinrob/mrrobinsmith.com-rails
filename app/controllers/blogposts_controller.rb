@@ -1,6 +1,19 @@
 class BlogpostsController < ApplicationController
+
   def new
+    if !user_signed_in?
+      redirect_to '/blogposts'
+    end
   end
+
+
+  def admin
+    if !user_signed_in?
+      redirect_to '/blogposts'
+    end
+    @blogposts = Blogpost.all
+  end
+
 
   def index
     @blogposts = Blogpost.all[0 .. 6]
@@ -36,10 +49,6 @@ class BlogpostsController < ApplicationController
     @blogpost.destroy
     flash[:notice] = "Blogpost deleted"
     redirect_to "/blogposts/admin"
-  end
-
-  def admin
-    @blogposts = Blogpost.all
   end
 
   private
