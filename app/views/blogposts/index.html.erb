@@ -3,18 +3,26 @@
 </div>
 
 
-<% @blogposts.each_with_index do |blogpost, i| %>
-    <div class="col-md-6">
-        <div class="page-header">
-            <h2><%= blogpost.title %>
-                <br>
-                <small><%= blogpost.created_at.strftime("%Y-%m-%d") %></small>
-            </h2>
-        </div>
+<div class="row">
+    <% @blogposts.each_with_index do |blogpost, i| %>
+        <% if ((i % 2) == 0) and i != 0 %>
+            </div>
+        <% end %>
+            <div class="col-md-6">
+                <div class="page-header">
+                    <h2><%= blogpost.title %>
+                        <br>
+                        <small><%= blogpost.created_at.strftime("%Y-%m-%d") %></small>
+                    </h2>
+                </div>
 
-        <p>
-            <%= "#{blogpost.preview} ..." %>
-            <%= link_to 'Show', blogpost_path(blogpost) %></td>
-        </p>
-    </div>
-<% end %>
+                <p>
+                    <%= "#{blogpost.preview} ..." %>
+                    <%= link_to 'Show', blogpost_path(blogpost) %></td>
+                </p>
+            </div>
+        <% if ((i % 2) == 0) %>
+            <div class="row">
+        <% end %>
+    <% end %>
+</div>
