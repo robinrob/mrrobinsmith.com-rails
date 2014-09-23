@@ -1,0 +1,27 @@
+%h1="Blog Post Admin"
+
+
+.row
+    .col-md-1
+        %h3="Title"
+
+    .col-md-7
+        %h3="Body"
+
+    .col-md-1
+        %h3="Actions"
+
+
+-@blogposts.each do |blogpost|
+    .row
+        .col-md-1
+            = "#{blogpost.title}"
+
+        .col-md-7
+            = "#{blogpost.body}"
+
+        .col-md-3
+            =link_to 'Show', blogpost_path(blogpost)
+            =link_to 'Edit', edit_blogpost_path(blogpost)
+            =link_to 'Delete', blogpost_path(blogpost), :method => "delete"
+    %br/
