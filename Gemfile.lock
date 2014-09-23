@@ -69,6 +69,8 @@ GEM
     faker (1.4.3)
       i18n (~> 0.5)
     ffi (1.9.3)
+    haml (4.0.5)
+      tilt
     high_voltage (2.2.1)
     hike (1.2.3)
     i18n (0.6.11)
@@ -196,6 +198,7 @@ DEPENDENCIES
   database_cleaner
   factory_girl_rails
   faker
+  haml
   high_voltage
   jbuilder (~> 2.0)
   jquery-rails

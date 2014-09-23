@@ -1,6 +1,11 @@
 class PagesController < ApplicationController
+  def hello
+  end
+
+
   def cv
   end
+
 
   def download_cv
     send_file  'public/cv.pdf',

@@ -40,6 +40,8 @@ Rails.application.routes.draw do
 
   get '/css/eyes' => 'css#eyes'
 
+  get '/hello' => 'pages#hello'
+
   resources :blogposts
 
   resources :users
