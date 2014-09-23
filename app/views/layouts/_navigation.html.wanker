@@ -1,0 +1,31 @@
+<%# navigation styled for Bootstrap 3.0 %>
+<nav class="navbar navbar-inverse nav-main navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <%= link_to 'Robin Smith Software', root_path, :class => 'navbar-brand' %>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li><%= link_to "Blog", '/blogposts' %></li>
+                <li><%= link_to "Programming", '/programming' %></li>
+                <li><%= link_to "CV", '/cv' %></li>
+                <!--<li><%= link_to "CSS Face", '/face' %></li>-->
+            </ul>
+            <!-- Something to do is to make right-nav-bar pull-left when navbar folds up!! -->
+            <ul class="nav navbar-nav pull-right">
+                <% if user_signed_in? %>
+                    <li><a href="/auth/logout" class="btn login-btn">Logout</a></li>
+                <% else %>
+                    <li><a href="#" class="btn login-btn" data-toggle="modal" data-target="#myModal">Login</a></li>
+                <% end %>
+            </ul>
+        </div>
+    </div>
+</nav>
