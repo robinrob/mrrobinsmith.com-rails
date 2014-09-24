@@ -13,8 +13,8 @@
 %header
     = render 'layouts/navigation'
 
-%main {:role => "main"}
-= render 'layouts/messages'
+%main{:role => "main"}
+    = render 'layouts/messages'
     .container
         = yield
 
@@ -26,28 +26,28 @@
 
             -# Modal Header
             .modal-header
-                %button{:type=>"button", :class=>"close", "data-dismiss"=>"modal"}="&times;"
-                %h4{:class=>"modal-title"}="Login"
+                %button{:type=>"button", :class=>"close", "data-dismiss"=>"modal"}
+                %h4{:class=>"modal-title"}
 
             -#Modal Body
             .modal-body
-                -#=form_for :user, :url => {:controller => 'auth', :action => "login"}, :html => {:method => "get"} do |f|
-                    -#.form-group
-                    -#    .row
-                            -#.col-md-4
-                            -#    = f.label :email
-                            -#    %br?
-                            -#    = f.text_field :email, :class => "full-width"
-                            -#
-                            -#.col-md-4
-                            -#    = f.label :password
-                            -#    %br/
-                            -#    = f.password_field :password, :class => "full-width"
+                =form_for :user, :url => {:controller => 'auth', :action => "login"}, :html => {:method => "get"} do |f|
+                    .form-group
+                        .row
+                            .col-md-4
+                                = f.label :email
+                                %br?
+                                = f.text_field :email, :class => "full-width"
 
-                            -#.col-md-4
-                                -#= f.label ""
+                            .col-md-4
+                                = f.label :password
                                 %br/
-                                -#= f.submit "Login", :class => "btn btn-primary full-width"
+                                = f.password_field :password, :class => "full-width"
+
+                            .col-md-4
+                                = f.label ""
+                                %br/
+                                = f.submit "Login", :class => "btn btn-primary full-width"
 
 
 
@@ -57,9 +57,9 @@
             %li
                 %a Robin Smith (2014)
 
-        -#- if user_signed_in?
-        -#    .collapse.navbar-collapse
-        -#        %ul{:class=>"nav navbar-nav pull-right"}
-        -#            %li
-        -#            = link_to "New Post", :controller => 'blogposts', :action => 'new'
-        -#            = link_to "Admin", :controller => 'blogposts', :action => 'admin'
+        - if user_signed_in?
+            .collapse.navbar-collapse
+                %ul{:class=>"nav navbar-nav pull-right"}
+                    %li
+                    = link_to "New Post", :controller => 'blogposts', :action => 'new'
+                    = link_to "Admin", :controller => 'blogposts', :action => 'admin'
