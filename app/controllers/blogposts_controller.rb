@@ -2,7 +2,7 @@ class BlogpostsController < ApplicationController
 
   def new
     if !user_signed_in?
-      redirect_to '/blogposts'
+      redirect_to blogposts_path
     end
   end
 
@@ -17,6 +17,11 @@ class BlogpostsController < ApplicationController
 
   def index
     @blogposts = Blogpost.all[0 .. 6]
+    # render partial: 'layouts/navigation_bottom'
+    # render 'layouts/_navigation_bottom'
+    # if user_signed_in?
+    #   render partial: 'layouts/navigation_bottom'
+    # end
   end
 
   def create

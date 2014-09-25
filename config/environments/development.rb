@@ -1,4 +1,6 @@
 Rails.application.configure do
+
+  APP_NAME = Rails.application.class.parent_name
   # Settings specified here will take precedence over those in config/application.rb.
 
   # In the development environment your application's code is reloaded on

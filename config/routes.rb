@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+
   get "auth/login"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -42,9 +43,11 @@ Rails.application.routes.draw do
 
   get '/hello' => 'pages#hello'
 
+  resource :profile
+
   resources :blogposts
 
-  resources :users
-  
+  resources :users, except: [:index]
+
 
 end

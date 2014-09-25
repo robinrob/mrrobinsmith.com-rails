@@ -1,0 +1,10 @@
+%nav.navbar.navbar-default.navbar-fixed-bottom
+  .container
+    %ul.nav.navbar-nav
+      %li
+        %a Robin Smith (2014)
+    - if user_signed_in?
+      .collapse.navbar-collapse
+        %ul.nav.navbar-nav.pull-right
+          %li= link_to "New Post", :controller => 'blogposts', :action => 'new'
+          %li= link_to "Admin", :controller => 'blogposts', :action => 'admin'

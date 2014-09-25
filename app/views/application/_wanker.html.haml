@@ -1,0 +1,25 @@
+#myModal.modal.fade
+  / modal-sm or modal-lg can be used here
+  .modal-dialog
+    .modal-content
+      / Modal Header
+      .modal-header
+        %button.close{"data-dismiss" => "modal", :type => "button"} ×
+        %h4.modal-title Login
+      / Modal Body
+      .modal-body
+        = form_for :user, :url => {:controller => 'auth', :action => "login"}, :html => {:method => "get"} do |f|
+          .form-group
+            .row
+              .col-md-4
+                = f.label :email
+                %br/
+                = f.text_field :email, :class => "full-width"
+              .col-md-4
+                = f.label :password
+                %br/
+                = f.password_field :password, :class => "full-width"
+              .col-md-4
+                = f.label ""
+                %br/
+                = f.submit "Login", :class => "btn btn-primary full-width"
