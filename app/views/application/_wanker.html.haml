@@ -18,10 +18,10 @@
               .col-md-4
                 = f.label :password
                 %br/
-                = f.password_field :password, :autocomplete => "off"
+                = f.password_field :password, :class => ["full-width"], :autocomplete => "off"
               .col-md-4
-                = ""
-                = f.submit "Log in", :class => "btn btn-primary full-width"
+                = f.label " "
+                = f.submit "Log in", :class => ["btn","btn-primary", "full-width"]
             .row
               .col-md-4
                 = render "devise/shared/links"
