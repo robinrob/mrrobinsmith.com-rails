@@ -1,0 +1,51 @@
+#myModal.modal.fade
+  / modal-sm or modal-lg can be used here
+  .modal-dialog
+    .modal-content
+      / Modal Header
+      .modal-header
+        %button.close{"data-dismiss" => "modal", :type => "button"} ×
+        %h4.modal-title Login
+      / Modal Body w
+      .modal-body
+        = form_for :user, :url => session_path(:user) do |f|
+          .form-group
+            .row
+              .col-md-4
+                = f.label :email
+                %br/
+                = f.email_field :email, :class => ["full-width"], :autofocus => true
+              .col-md-4
+                = f.label :password
+                %br/
+                = f.password_field :password, :class => ["full-width"], :autocomplete => "off"
+              .col-md-4
+                = f.label " "
+                = f.submit "Log in", :class => ["btn","btn-primary", "full-width"]
+            .row
+              .col-md-4
+                = render "devise/shared/links"
+              .col-md-4
+                = ""
+              .col-md-4
+                - if devise_mapping.rememberable?
+                  = f.check_box :remember_me
+                  = f.label :remember_me
+
+-#= form_for :user, :url => {:controller => 'devise/sessions',
+-#                           :action => :create,
+-#                           :method => :post} do |f|
+-#  .form-group
+-#    .row
+-#      .col-md-4
+-#        = f.label :email
+-#        %br/
+-#        = f.text_field :email, :class => "full-width"
+-#      .col-md-4
+-#        = f.label :password
+-#        %br/
+-#        = f.password_field :password, :class => "full-width"
+-#      .col-md-4
+-#        = f.label "Login"
+-#        %br/
+-#        = f.submit "Login", :class => "btn btn-primary full-width"

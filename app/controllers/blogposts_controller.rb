@@ -1,17 +1,17 @@
 class BlogpostsController < ApplicationController
+  before_action :authenticate_user!, :except => [:index, :show]
 
   def new
-    if !user_signed_in?
-      redirect_to '/blogposts'
-    end
+    before_action :authenticate_user!
   end
 
 
   def admin
-    if !user_signed_in?
-      redirect_to '/blogposts'
+    if user_signed_in?
+      @blogposts = Blogpost.all
+    else
+      render 'index'
     end
-    @blogposts = Blogpost.all
   end
 
 

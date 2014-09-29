@@ -5,12 +5,12 @@
 .row
     %p
     -@blogposts.each_with_index do |blogpost, i|
-        -if ((i % 2) == 0) and i != 0 then
+        -if ((i % 3) == 0) and i != 0 then
             =yield '</div>'
 
-        .col-md-6
+        .col-md-4
             .page-header
-                %h2
+                %h3
                     = blogpost.title
                     %br/
                     %small= blogpost.created_at.strftime("%Y-%m-%d")
@@ -19,4 +19,4 @@
             = "#{blogpost.preview} ..."
             = link_to 'Show', blogpost_path(blogpost)
 
-        %p= if ((i % 2) == 0) then yield '<div class="row">' end
+        %p= if ((i % 3) == 0) then yield '<div class="row">' end

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 !! Strict
 
 %html
@@ -63,3 +64,40 @@
                     %li
                     = link_to "New Post", :controller => 'blogposts', :action => 'new'
                     = link_to "Admin", :controller => 'blogposts', :action => 'admin'
+=======
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
+    / <title><haml_loud> content_for?(:title) ? yield(:title) : &quot;Rails Bootstrap&quot; </haml_loud></title>
+    %title Robin Smith Software™
+    %meta{:content => content_for?(:description) ? yield(:description) : "Rails Bootstrap", :name => "description"}/
+    = stylesheet_link_tag 'application', :media => 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+  %body
+    %header
+      = render 'navigation'
+    %main{:role => "main"}
+      = render 'messages'
+
+      #wrap
+        .container
+          .page-header
+
+          = yield
+
+        #push
+
+      -##footer
+      -#  .container
+      -#    %h1 hello
+
+
+
+      = render 'wanker'
+
+
+      = render 'navigation_bottom'
+>>>>>>> 602125a1663f97a556f34cd8f8be944861cff0d9

@@ -12,7 +12,10 @@ gem 'colorize'
 gem 'pg'
 gem 'thin'
 gem 'bcrypt'
-gem 'haml'
+gem 'haml-rails'
+gem 'devise'
+gem 'meta_search'
+gem 'activeadmin', github: 'gregbell/active_admin'
 
 group :production do
   gem 'rails_12factor'
@@ -23,6 +26,7 @@ group :doc do
 end
   
 group :development do
+  gem 'erb2haml'
   gem 'spring'
   gem 'better_errors'
   gem 'binding_of_caller', :platforms=>[:mri_21]

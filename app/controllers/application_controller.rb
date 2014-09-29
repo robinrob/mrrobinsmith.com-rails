@@ -1,5 +1,8 @@
 class ApplicationController < ActionController::Base
   include ApplicationHelper
+
+  # after_action protect_from_forgery :with => :exception
+
   # Prevent CSRF attacks by raising an exception.
   # For APIs, you may want to use :null_session instead.
   # protect_from_forgery with: :exception
@@ -9,7 +12,4 @@ class ApplicationController < ActionController::Base
     redirect_to :back
   end
 
-  # def user_signed_in?
-  #   ApplicationHelper.user_signed_in
-  # end
 end
