@@ -1,15 +1,13 @@
 module ApplicationHelper
-  @@user_signed_in = false
-
-  def self.sign_in_user
-    @@user_signed_in = true
+  def devise_mapping
+    Devise.mappings[:user]
   end
 
-  def self.sign_out_user
-    @@user_signed_in = false
+  def resource_name
+    devise_mapping.name
   end
 
-  def user_signed_in?
-    @@user_signed_in
+  def resource_class
+    devise_mapping.to
   end
 end

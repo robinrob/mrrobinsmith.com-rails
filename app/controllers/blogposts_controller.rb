@@ -1,27 +1,20 @@
 class BlogpostsController < ApplicationController
-
   def new
-    if !user_signed_in?
-      redirect_to blogposts_path
-    end
+    before_action :authenticate_user!
   end
 
 
   def admin
-    if !user_signed_in?
-      redirect_to '/blogposts'
+    if user_signed_in?
+      @blogposts = Blogpost.all
+    else
+      render 'index'
     end
-    @blogposts = Blogpost.all
   end
 
 
   def index
     @blogposts = Blogpost.all[0 .. 6]
-    # render partial: 'layouts/navigation_bottom'
-    # render 'layouts/_navigation_bottom'
-    # if user_signed_in?
-    #   render partial: 'layouts/navigation_bottom'
-    # end
   end
 
   def create

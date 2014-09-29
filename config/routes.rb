@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 
-  get "auth/login"
+  devise_for :users
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -17,8 +18,6 @@ Rails.application.routes.draw do
 
   get '/cv/download' => 'pages#download_cv'
 
-  get '/programming' => 'programming#index'
-
   get '/programming/css' => 'css#index'
 
   get '/login' => 'auth#index'
@@ -31,10 +30,6 @@ Rails.application.routes.draw do
 
   get '/auth/newuser' => 'auth#newuser'
 
-  get '/blogposts/index' => 'blogposts#index'
-
-  get '/blogposts/admin' => 'blogposts#admin'
-
   get '/css/face' => 'css#face'
 
   get '/css/gradient' => 'css#gradient'
@@ -43,11 +38,15 @@ Rails.application.routes.draw do
 
   get '/hello' => 'pages#hello'
 
+  get '/blogposts/admin' => 'blogposts#admin'
+
   resource :profile
 
   resources :blogposts
 
-  resources :users, except: [:index]
+  resources :programming
+
+  # resources :users, :except => [:index]
 
 
 end

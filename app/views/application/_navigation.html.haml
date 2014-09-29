@@ -12,12 +12,12 @@
         %li= link_to "Blog", '/blogposts'
         %li= link_to "Programming", '/programming'
         %li= link_to "CV", '/cv'
-        / <li><haml_loud> link_to &quot;CSS Face&quot;, &#39;/face&#39; </haml_loud></li>
+
       / Something to do is to make right-nav-bar pull-left when navbar folds up!!
       %ul.nav.navbar-nav.pull-right
         - if user_signed_in?
           %li
-            %a.btn.login-btn{:href => "/auth/logout"} Logout
+            =link_to "Logout", destroy_user_session_path, :method => :delete
         - else
           %li
             %a.btn.login-btn{"data-target" => "#myModal", "data-toggle" => "modal", :href => "#"} Login

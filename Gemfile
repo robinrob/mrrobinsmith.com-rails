@@ -12,7 +12,8 @@ gem 'colorize'
 gem 'pg'
 gem 'thin'
 gem 'bcrypt'
-gem 'haml'
+gem 'haml-rails'
+gem 'devise'
 
 group :production do
   gem 'rails_12factor'
