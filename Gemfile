@@ -14,6 +14,8 @@ gem 'thin'
 gem 'bcrypt'
 gem 'haml-rails'
 gem 'devise'
+gem 'meta_search'
+gem 'activeadmin', github: 'gregbell/active_admin'
 
 group :production do
   gem 'rails_12factor'
