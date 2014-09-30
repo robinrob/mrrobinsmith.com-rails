@@ -15,7 +15,7 @@ ActiveAdmin.setup do |config|
   # Set an optional image to be displayed for the header
   # instead of a string (overrides :site_title)
   #
-  # N:ote => Aim for an image that's 21px high so it fits in the header.
+  # Note: Aim for an image that's 21px high so it fits in the header.
   #
   # config.site_title_image = "logo.png"
 
@@ -188,7 +188,7 @@ ActiveAdmin.setup do |config|
   #
   #   config.namespace :admin do |admin|
   #     admin.build_menu :utility_navigation do |menu|
-  #       menu.add :label => "My Great Website", :url => "http://www.mygreatwebsite.com", :html_options => { :target => :blank }
+  #       menu.add label: "My Great Website", url: "http://www.mygreatwebsite.com", html_options: { target: :blank }
   #       admin.add_logout_button_to_menu menu
   #     end
   #   end
@@ -197,7 +197,7 @@ ActiveAdmin.setup do |config|
   #
   #   config.namespace :admin do |admin|
   #     admin.build_menu :default do |menu|
-  #       menu.add :label => "My Great Website", :url => "http://www.mygreatwebsite.com", :html_options => { :target => :blank }
+  #       menu.add label: "My Great Website", url: "http://www.mygreatwebsite.com", html_options: { target: :blank }
   #     end
   #   end
 
