@@ -6,74 +6,74 @@
     %title Performance
     :css
       .main {
-          width: 800px;
+          :width => 800px;
       }
 
       body {
-          background-color: darkred;
-          background-image: linear-gradient(to bottom, rgba(139, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), linear-gradient(to right, rgba(139, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+          background-:color => darkred;
+          background-:image => linear-gradient(to bottom, rgba(139, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), linear-gradient(to right, rgba(139, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
       }
 
       .box-row {
-          line-height: 0px;
-          width: 1000px;
-          text-align: center;
+          line-:height => 0px;
+          :width => 1000px;
+          text-:align => center;
       }
 
       .box {
-          width: 100px;
-          height: 100px;
-          text-align: center;
-          display: inline-block;
-          background-color: transparent;
-          overflow: inherit;
-          margin: -2px -2px -3px -2px;
-          border-radius: 50px;
+          :width => 100px;
+          :height => 100px;
+          text-:align => center;
+          :display => inline-block;
+          background-:color => transparent;
+          :overflow => inherit;
+          :margin => -2px -2px -3px -2px;
+          border-:radius => 50px;
       }
 
       .box:hover {
-          transition: all 1s ease-out;
-          box-shadow: 10px 10px 10px red;
-          /*width: 150px;*/
-          /*height: 150px;*/
+          :transition => all 1s ease-out;
+          box-:shadow => 10px 10px 10px red;
+          /*:width => 150px;*/
+          /*:height => 150px;*/
       }
 
       /* This will contain images within box's borders when box shrinks. */
       .contain {
-          overflow: hidden;
+          :overflow => hidden;
       }
 
       /* Default is that images will "spill" outside of box's borders. */
       .spill {
-          overflow: inherit;
+          :overflow => inherit;
       }
 
       img:hover {
-          transition: all 1s ease-out;
-          transform: rotate(720deg);
+          :transition => all 1s ease-out;
+          :transform => rotate(720deg);
       }
 
       /* Use 'media queries' to adjust CSS for specific display conditions (try manually resizing browser) */
-      /*@media (max-width: 1000px) {*/
+      /*@media (max-:width => 1000px) {*/
       /*body {*/
-      /*background-color: darkred;*/
+      /*background-:color => darkred;*/
       /*}*/
       /*}*/
-      /*@media (max-width: 100px) {*/
+      /*@media (max-:width => 100px) {*/
       /*body {*/
-      /*background-color: orange;*/
+      /*background-:color => orange;*/
       /*}*/
       /*}*/
       /**/
 
-      /*@media (max-width: 400px) {*/
+      /*@media (max-:width => 400px) {*/
       /*body {*/
-      /*background-color: yellow;*/
+      /*background-:color => yellow;*/
       /*}*/
       /*}*/
-      /*@media (max-width: 200px) {*/
+      /*@media (max-:width => 200px) {*/
       /*body {*/
-      /*background-color: green;*/
+      /*background-:color => green;*/
       /*}*/
       /*}*/
   %body
