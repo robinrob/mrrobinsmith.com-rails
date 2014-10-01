@@ -14,6 +14,7 @@ gem 'thin'
 gem 'bcrypt'
 gem 'haml-rails'
 gem 'devise'
+gem 'mailcatcher'
 gem 'activeadmin', github: 'gregbell/active_admin'
 
 group :production do
