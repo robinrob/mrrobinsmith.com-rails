@@ -1,6 +1,8 @@
 class ApplicationController < ActionController::Base
   include ApplicationHelper
 
+  # before_filter :authenticate_admin_user!
+
   # after_action protect_from_forgery :with => :exception
 
   # Prevent CSRF attacks by raising an exception.
@@ -20,7 +22,6 @@ class ApplicationController < ActionController::Base
       redirect_to root_path
     end
   end
-
 
   def current_admin_user
     return nil if user_signed_in? && !current_user.admin?
