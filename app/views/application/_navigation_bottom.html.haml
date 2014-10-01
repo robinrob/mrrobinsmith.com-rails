@@ -4,7 +4,7 @@
       %li
         %a Robin Smith (2014)
 
-    - if current_user.admin && current_user.admin
+    - if current_user && current_user.admin
       %ul.nav.navbar-nav.pull-right
         %li= link_to "New Post", :controller => 'blogposts', :action => 'new'
         %li= link_to "Admin", :controller => 'blogposts', :action => 'admin'
