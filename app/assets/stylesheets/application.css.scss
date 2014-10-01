@@ -21,7 +21,17 @@ body, main {
 
 .nav-main {
     font-size: 18px;
-//    background-image: linear-gradient(to right, rgba(0,0,0,0.5), rgba(73, 73, 73, 0.50)), linear-gradient(to bottom, rgba(0,0,0,0.5), rgb(114, 114, 114));
+    background: linear-gradient(to top, rgba(180, 180, 180, 0.50), rgb(170, 170, 170));
+    border-bottom: 2px solid black !important;
+//    background: linear-gradient(to right, rgba(0,0,0,0.5), rgba(198, 198, 198, 0.50)), linear-gradient(to bottom, rgba(0,0,0,0.5), rgb(114, 114, 114));
+}
+
+a:hover {
+    color: white !important;
+}
+
+a {
+    color: black !important;
 }
 
 a:visited {
