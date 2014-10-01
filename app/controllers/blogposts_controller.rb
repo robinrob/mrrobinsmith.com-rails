@@ -2,7 +2,6 @@ class BlogpostsController < ApplicationController
   before_action :authenticate_user!, :except => [:index, :show]
 
   def new
-    before_action :authenticate_user!
   end
 
 
@@ -23,7 +22,7 @@ class BlogpostsController < ApplicationController
     @blogpost = Blogpost.new(blogpost_params)
 
     @blogpost.save
-    redirect_to '/blogposts/index'
+    redirect_to blogpost_path(@blogpost)
   end
 
   def update

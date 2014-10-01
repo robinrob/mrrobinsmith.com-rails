@@ -17,7 +17,6 @@ body, main {
 //    background-color: white !important;
     height: 100% !important;
     padding-top: 20px;
-    padding-bottom: 20px;
 }
 
 .nav-main {
@@ -29,17 +28,17 @@ body, main {
 }
 
 
-a:hover {
+.nav-main a:hover {
     color: white !important;
 }
 
-a {
+.nav-main a {
     color: black !important;
 }
 
-a:visited {
-    color: black;
-}
+//.nav-main a:visited {
+//    color: black;
+//}
 
 .back-btn {
     font-size: 20px !important;
