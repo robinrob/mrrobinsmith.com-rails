@@ -1,10 +1,13 @@
 %nav.navbar.navbar-default.navbar-fixed-bottom
   .container
-    %ul.nav.navbar-nav
-      %li
-        %a Robin Smith (2014)
+    .row
+      .col-xs-6
+        %ul.nav.navbar-nav
+          %li
+            %a Robin Smith (2014)
 
-    - if current_user && current_user.admin
-      %ul.nav.navbar-nav.pull-right
-        %li= link_to "New Post", :controller => 'blogposts', :action => 'new'
-        %li= link_to "Admin", :controller => 'blogposts', :action => 'admin'
+      .col-xs-6
+        - if current_user && current_user.admin
+          %ul.nav.navbar-nav.pull-right
+            %li= link_to "New Post", :controller => 'blogposts', :action => 'new'
+            %li= link_to "Admin", :controller => 'blogposts', :action => 'admin'
