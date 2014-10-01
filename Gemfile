@@ -14,7 +14,6 @@ gem 'thin'
 gem 'bcrypt'
 gem 'haml-rails'
 gem 'devise'
-gem 'mailcatcher'
 gem 'activeadmin', github: 'gregbell/active_admin'
 
 group :production do
@@ -32,6 +31,7 @@ group :development do
   gem 'binding_of_caller', :platforms=>[:mri_21]
   gem 'quiet_assets'
   gem 'rails_layout'
+  gem 'mailcatcher'
 end
 group :development, :test do
   gem 'factory_girl_rails'
