@@ -72,6 +72,12 @@ body, main {
     font-size: 18px !important;
 }
 
+.separator {
+    margin-right: 100px !important;
+    marin-left: 100px !important;
+    layout
+}
+
 //.col-md-2 {
 //    background-color: red;
 //}
@@ -115,5 +121,14 @@ body {
         margin-right: -20px;
         padding-left: 20px;
         padding-right: 20px;
+    }
+}
+
+
+/* Lastly, apply responsive CSS fixes as necessary */
+@media (max-width: 767px) {
+    .login-bar {
+        right: auto;
+        left: 0;
     }
 }
