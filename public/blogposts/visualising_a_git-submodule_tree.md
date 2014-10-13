@@ -17,7 +17,7 @@ Finally i more recently got to wondering 'just how many submodules do i have in 
 ### `rake each_sub['echo, quiet']`
 
 <screenshot showing code tree>
-<img src="file:///Users/msl/Programming/robin/ruby/projects/mrrobinsmith.com/public/blogposts/images/rake_each_sub.png" alt="Screenshot showing drawn code tree" style="height: 500px"/>
+<img src="file:///Users/msl/Programming/robin/ruby/projects/mrrobinsmith.com/public/blogposts/images/rake_each_sub.png" alt="Screenshot showing drawn code tree" />
 
 
 The 'drawing' of my code tree is simply a special case usage of my `rake each_sub` command, where i am just running the shell command `echo`, with my rake task in `quiet` mode - which suppresses terminal output from the command.
@@ -25,7 +25,7 @@ The 'drawing' of my code tree is simply a special case usage of my `rake each_su
 
 ### `rake sort_sub`
 <screenshot showing sorted .gitmodules file>
-<img src="file:///Users/msl/Programming/robin/ruby/projects/mrrobinsmith.com/public/blogposts/images/rake_sort_sub.png" alt="Screenshot showing drawn code tree" style="height: 500px"/>
+<img src="file:///Users/msl/Programming/robin/ruby/projects/mrrobinsmith.com/public/blogposts/images/rake_sort_sub.png" alt="Screenshot showing drawn code tree" />
 
 Using my code library, it was exceedingly simple to add a `sort!` method to my `GitConfigFile` model, which delegates to a `GitConfigBlockCollection` class to perform the sort.
 
