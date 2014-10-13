@@ -15,6 +15,7 @@ gem 'bcrypt'
 gem 'haml-rails'
 gem 'devise'
 gem 'activeadmin', github: 'gregbell/active_admin'
+gem 'redcarpet'
 
 group :production do
   gem 'rails_12factor'
@@ -38,6 +39,7 @@ group :development, :test do
   gem 'rspec-rails'
 end
 group :test do
+  gem 'differ'
   gem 'capybara'
   gem 'database_cleaner'
   gem 'faker'
