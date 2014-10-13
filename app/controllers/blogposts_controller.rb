@@ -1,16 +1,13 @@
 class BlogpostsController < ApplicationController
   before_action :authenticate_user!, :except => [:index, :show]
+  before_action :authenticate_admin_user!, :only => [:admin]
 
   def new
   end
 
 
   def admin
-    if user_signed_in?
-      @blogposts = Blogpost.all
-    else
-      render 'index'
-    end
+    @blogposts = Blogpost.all
   end
 
 
