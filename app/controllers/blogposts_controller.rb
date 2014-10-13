@@ -32,7 +32,7 @@ class BlogpostsController < ApplicationController
 
     if @blogpost.update(blogpost_params)
       redirect_to @blogpost
-    elsej
+    else
       render 'edit'
     end
   end

@@ -9,19 +9,20 @@
       = link_to 'Robin Smith Software', root_path, :class => 'navbar-brand'
     .collapse.navbar-collapse
       .container
-        %ul.nav.navbar-nav
-          %li= link_to "Blog", '/blogposts'
-          %li= link_to "Programming", '/programming'
-          %li= link_to "CV", '/cv'
+        .row
+          .col-xs-8
+            %ul.nav.navbar-nav
+              %li= link_to "Blog", '/blogposts'
+              %li= link_to "Programming", '/programming'
+              %li= link_to "CV", '/cv'
 
-        .separator
-          = ""
 
-        / Something to do is to make right-nav-bar pull-left when navbar collapses!
-        %ul.nav.navbar-nav
-          - if user_signed_in?
-            %li
-              =link_to "Logout", destroy_user_session_path, :method => :delete
-          - else
-            %li
-              %a.btn.login-btn{"data-target" => "#myModal", "data-toggle" => "modal", :href => "#"} Login
+          .col-xs-1
+            / Something to do is to make right-nav-bar pull-left when navbar collapses!
+            %ul.nav.navbar-nav
+              - if user_signed_in?
+                %li
+                  =link_to "Logout", destroy_user_session_path, :method => :delete
+              - else
+                %li
+                  %a.btn.login-btn{"data-target" => "#myModal", "data-toggle" => "modal", :href => "#"} Login
