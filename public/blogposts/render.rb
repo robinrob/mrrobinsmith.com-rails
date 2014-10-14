@@ -12,7 +12,7 @@ markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML,
 
 text = markdown.render(File.read(file))
 
-puts text.light_white
+puts text
 
 File.open(File.join('html', "#{file}.html"), "w") do |file|
   file.write(text)

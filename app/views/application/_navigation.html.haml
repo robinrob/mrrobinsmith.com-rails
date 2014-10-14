@@ -10,14 +10,13 @@
     .collapse.navbar-collapse
       .container
         .row
-          .col-xs-8
+          .col-lg-7
             %ul.nav.navbar-nav
               %li= link_to "Blog", '/blogposts'
               %li= link_to "Programming", '/programming'
               %li= link_to "CV", '/cv'
 
-
-          .col-xs-1
+          .col-lg-1
             / Something to do is to make right-nav-bar pull-left when navbar collapses!
             %ul.nav.navbar-nav
               - if user_signed_in?
