@@ -3,4 +3,4 @@
 	url = https://bitbucket.org/robinrob/rakefile.git
 [submodule "rakelib"]
 	path = rakelib
-	url = git@bitbucket.org:robinrob/rakefile.git
+	url = git@bitbucket.org:robinrob/rakelib.git
