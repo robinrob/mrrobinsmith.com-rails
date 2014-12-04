@@ -18,6 +18,7 @@ gem 'haml-rails'
 gem 'devise'
 gem 'activeadmin', github: 'gregbell/active_admin'
 gem 'redcarpet'
+gem 'differ'
 
 group :production do
   gem 'rails_12factor'
@@ -40,8 +41,8 @@ group :development, :test do
   gem 'factory_girl_rails'
   gem 'rspec-rails'
 end
+
 group :test do
-  gem 'differ'
   gem 'capybara'
   gem 'database_cleaner'
   gem 'faker'
