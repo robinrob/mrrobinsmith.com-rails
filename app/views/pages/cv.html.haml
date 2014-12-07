@@ -1,10 +1,8 @@
-.page-header
-    %h1.center.cv-font.cv-name Robin Smith
-
-
-
 .cv
-    .cv-title.invert.center
+    .cv-page-header
+        %h1.center.cv-font.cv-name Robin Smith
+
+    .cv-title.center.invert
         %p Cloud Developer
 
 
@@ -24,42 +22,42 @@
             %span.cv-values-em easy to work with
 
 
-    .details
-        .details-line-label Date of birth:
-        .details-line-value 24/06/1987
+    .cv-details
+        .row
+            .col-xs-12
+                .cv-details-line-label Date of birth:
+                .cv-details-line-value 24/06/1987
 
-        %br
+        .row
+            .col-xs-12
+                .cv-details-line-label Tel:
+                .cv-details-line-value 07445 483 904
 
-        .details-line-label Tel:
-        .details-line-value 07445 483 904
+        .row
+            .col-xs-12
+                .cv-details-line-label Email:
+                .cv-details-line-value robin@mrrobinsmith.com
 
-        %br
+        .row
+            .col-xs-12
+                .cv-details-line-label Website:
+                .cv-details-line-value http://mrrobinsmith.com
 
-        .details-line-label Email:
-        .details-line-value robin@mrrobinsmith.com
-
-
-        %br
-
-        .details-line-label Website:
-        .details-line-value http://mrrobinsmith.com
-
-
-        %br
-
-        .details-line-label Address:
-        .details-line-value 12 Macaulay Drive, Balderton, Nottinghamshire, NG24 3QQ
+        .row
+            .col-xs-12
+                .cv-details-line-label Address:
+                .cv-details-line-value 12 Macaulay Drive, Balderton, Nottinghamshire, NG24 3QQ
 
 
-    .experience
+    .cv-experience
         .row
             .col-xs-2
                 .cv-section-name Experience
             .col-xs-10
-                .experience-block
-                    .experience-heading
+                .cv-experience-block
+                    .cv-experience-heading
                         Software Developer - Cloudreach Ltd. (October 2011 – June 2013)
-                    .experience-content
+                    .cv-experience-content
                         I joined Cloudreach as the first developer in their new Edinburgh office. I immediately became
                         and remain a core developer on Cloudreach's first sellable product: Alumina Connect - a
                         substantial application which runs on the Salesforce Force.com platform and synchronises data
@@ -76,102 +74,101 @@
             .col-xs-2
                 .cv-section-name
             .col-xs-10
-                .experience-block
-                    .experience-heading
+                .cv-experience-block
+                    .cv-experience-heading
                         DevOps Engineer - Cloudreach Ltd (June 2013 – Present)
-
-                    .experience-content
+                    .cv-experience-content
                         An opportunity arose to change role to DevOps engineer. I have gained practical knowledge of
                         the AWS platform, Splunk, Google Apps and many tools for diagnosing issues with Cloud
                         technologies. I have vastly improved my ability to communicate with customers.
 
 
-        .row
-            .col-xs-2
-                .cv-section-name
-            .col-xs-10
-                .experience-block
-                    .experience-heading
-
-                .experience-content
-
-
-    .tech-skills
+    .cv-tech-skills
         .row
             .col-xs-2
                 .cv-section-name Tech Skills
 
             .col-xs-10
-                .tech-skills-block
-                    .row
-                        .col-xs-6
-                            .experience-heading Programming:
-                            %ul
-                                %li C - 2 years
-                                %li Java - 2 years
+                .row
+                    .col-xs-6
+                        .cv-experience-block
+                            .cv-experience-heading Programming:
+                            .cv-experience-content
+                                %ul
+                                    %li C - 2 years
+                                    %li Java - 2 years
 
-                        .col-xs-6
-                            .experience-heading Platforms:
-                            %ul
-                                %li Salesforce
-                                %li Force.com Certified Developer
+                    .col-xs-6
+                        .cv-experience-block
+                            .cv-experience-heading Platforms:
+                            .cv-experience-content
+                                %ul
+                                    %li Salesforce
+                                    %li Force.com Certified Developer
+
+                .row
+                    .col-xs-6
+                        .cv-experience-block
+                            .cv-experience-heading Development Tools:
+                            .cv-experience-content
+                                %ul
+                                    %li Git, Github, Bitbucket
+                                    %li IntelliJ IDEA
+
+                    .col-xs-6
+                        .cv-experience-block
+                            .cv-experience-heading Methodologies:
+                            .cv-experience-content
+                                %ul
+                                    %li Test-Driven Development
+                                    %li Continuous Integration
 
 
-                .tech-skills-block
-                    .row
-                        .col-xs-6
-                            .experience-heading Development Tools:
-                            %ul
-                                %li Git, Github, Bitbucket
-                                %li IntelliJ IDEA
-
-                        .col-xs-6
-                            .experience-heading Methodologies:
-                            %ul
-                                %li Test-Driven Development
-                                %li Continuous Integration
-
-
-    .education
+    .cv-education
         .row
             .col-xs-2
                 .cv-section-name Education
 
             .col-xs-2
-                .experience-heading 2005-2009
+                .cv-experience-heading 2005-2009
 
             .col-xs-8
-                .experience-heading MPhys Physics with Astrophysics, University of Sussex
-                .experience-block Degree class 2:1
+                .cv-experience-block
+                    .cv-experience-heading MPhys Physics with Astrophysics, University of Sussex
+                    .cv-experience-content
+                        Degree class
+                        %strong 2:1
 
 
-    .other-skills
+    .cv-other-skills
         .row
             .col-xs-2
                 .cv-section-name Other Skills & Qualities
 
             .col-xs-10
-                .experience-block
-                    .experience-heading Efficient time management & work ethic
+                .cv-experience-block
+                    .cv-experience-heading Efficient time management & work ethic
 
-                    .experience-content
+                    .cv-experience-content
                         I take a very energetic and positive approach to life and try to make the most of every day.
                         Handling the workload of my degree alongside paid employment and recreational activities
                         taught me effective planning, organisation and working to a self-disciplined schedule. I apply
                         this philosophy to every working day which starts with a kilometer of swimming.
 
 
-    .employment-history
+    .cv-employment-history
         .row
             .col-xs-2
-                .cv-section-name Employment history
+                .cv-section-name Employment History
 
             .col-xs-3
-                .experience-heading October 2011 - present
+                .cv-experience-heading October 2011 - present
 
             .col-xs-7
-                .experience-heading Cloudreach Ltd
-                Software Developer, DevOps Engineer (see above).
+                .cv-experience-block
+                    .cv-experience-heading Cloudreach Ltd
+                    .cv-experience-content
+                        Software Developer, DevOps Engineer (see above).
 
 
 
@@ -180,8 +177,27 @@
                 .cv-section-name
 
             .col-xs-3
-                .experience-heading January 2010 - October 2011
+                .cv-experience-heading January 2010 - October 2011
 
             .col-xs-7
-                .experience-heading Sainsbury’s PLC
-                Part-time work at a Sainsbury’s Local store to supplement my income whilst also doing voluntary work and learning programming.
+                .cv-experience-block
+                    .cv-experience-heading Sainsbury’s PLC
+                    .cv-experience-content
+                        Part-time work at a Sainsbury’s Local store to supplement my income whilst also doing voluntary work and
+                        learning programming.
+
+
+
+    .cv-about
+        .row
+            .col-xs-2
+                .cv-section-name
+                    About
+
+            .col-xs-10
+                .cv-experience-content
+                    I'm very physically active and swim and cycle every day. I love playing pool with friends,
+                    making new ones and meeting random people. I highly value downtime to myself to play guitar
+                    or piano, play games, read books, or cook fine food. I am also a keen astronomer. I recently
+                    attended and highly enjoyed the developer conference 'Whisky Web 2' in Scotland, where I was
+                    lucky enough to stay in Airth Castle: http://whiskyweb.co.uk/
