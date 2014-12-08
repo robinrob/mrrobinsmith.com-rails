@@ -11,6 +11,8 @@ Rails.application.routes.draw do
 
   get '/cv' => 'pages#cv'
 
+  get '/cover_letter' => 'pages#cover_letter'
+
   get '/wanker' => 'pages#inline_vs_block'
 
   get '/cv/download' => 'pages#download_cv'
