@@ -18,7 +18,7 @@
 
           .col-lg-1
             / Something to do is to make right-nav-bar pull-left when navbar collapses!
-            %ul.nav.navbar-nav
+            %ul.nav.navbar-nav.pull-right
               - if user_signed_in?
                 %li
                   =link_to "Logout", destroy_user_session_path, :method => :delete
